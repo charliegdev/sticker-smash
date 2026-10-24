@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+export default function AboutScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home screen</Text>
+      <Text style={styles.text}>About screen</Text>
     </View>
   );
 }
@@ -11,11 +11,11 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
+    backgroundColor: "#25202e",
     justifyContent: "center",
-    backgroundColor: '#25292e',
+    alignItems: "center",
   },
   text: {
-    color: '#fff',
-  }
+    color: "#fff",
+  },
 });
