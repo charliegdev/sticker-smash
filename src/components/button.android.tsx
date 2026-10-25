@@ -14,7 +14,7 @@ type Props = {
   onPress?: () => void;
 };
 
-const YELLOW_TINT = "#25292e";
+const DARK_TEXT = "#25292e";
 
 export default function Button({ label, theme, onPress }: Props) {
   if (theme === "primary") {
@@ -23,7 +23,7 @@ export default function Button({ label, theme, onPress }: Props) {
         <Host matchContents>
           <ComposeButton
             onClick={onPress}
-            colors={{ containerColor: "#ffd33d", contentColor: YELLOW_TINT }}
+            colors={{ containerColor: "#ffd33d", contentColor: DARK_TEXT }}
           >
             <Row
               verticalAlignment="center"
@@ -32,9 +32,9 @@ export default function Button({ label, theme, onPress }: Props) {
               <Icon
                 source={require("@expo/material-symbols/image.xml")}
                 size={18}
-                tint={YELLOW_TINT}
+                tint={DARK_TEXT}
               />
-              <Text color={YELLOW_TINT}>{label}</Text>
+              <Text color={DARK_TEXT}>{label}</Text>
             </Row>
           </ComposeButton>
         </Host>

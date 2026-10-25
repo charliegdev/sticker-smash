@@ -12,7 +12,7 @@ type Props = {
   theme?: "primary";
   onPress?: () => void;
 };
-const YELLOW_TINT = "#25292e";
+const DARK_TEXT = "#25292e";
 
 export default function Button({ label, theme, onPress }: Props) {
   if (theme === "primary") {
@@ -27,7 +27,7 @@ export default function Button({ label, theme, onPress }: Props) {
               buttonStyle("borderedProminent"),
               controlSize("large"),
               tint("#ffd33d"),
-              foregroundStyle(YELLOW_TINT),
+              foregroundStyle(DARK_TEXT),
             ]}
           />
         </Host>
